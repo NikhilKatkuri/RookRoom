@@ -1,0 +1,26 @@
+{
+    "name": "@rookroom",
+    "private": true,
+    "author": "Katkuri Nikhil <knikhil07k@gmail.com>",
+    "license": "ISC",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+        "check-types": "turbo run check-types"
+    },
+    "devDependencies": {
+        "prettier": "3.9.6",
+        "prettier-plugin-tailwindcss": "^0.8.1",
+        "turbo": "^2.11.7",
+        "typescript": "7.0.2"
+    },
+    "packageManager": "pnpm@11.18.0",
+    "engines": {
+        "node": ">=24"
+    }
+}
